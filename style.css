@@ -417,7 +417,7 @@ h2 {
 
 .map-stage {
   display: grid;
-  grid-template-rows: auto auto minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
   gap: 14px;
   position: sticky;
   top: 18px;
@@ -499,11 +499,18 @@ h2 {
   gap: 8px;
 }
 
-.helper-panel {
-  left: 18px;
-  bottom: 18px;
-  width: min(320px, calc(100% - 36px));
-  padding: 14px 16px;
+.map-help-card {
+  padding: 16px 18px;
+  border-radius: 20px;
+  background: rgba(255, 250, 241, 0.88);
+  border: 1px solid rgba(38, 28, 20, 0.1);
+  box-shadow: var(--shadow-md);
+}
+
+.map-help-card p:last-child {
+  margin: 8px 0 0;
+  line-height: 1.55;
+  color: var(--muted);
 }
 
 .event-marker {
@@ -625,10 +632,6 @@ h2 {
     top: 14px;
     right: 14px;
     left: 14px;
-  }
-
-  .helper-panel {
-    display: none;
   }
 
   #map {

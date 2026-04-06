@@ -1,12 +1,19 @@
 // Harta fillon me një pamje të gjerë dhe më pas përshtatet me filtrat.
+const worldBounds = L.latLngBounds(
+  L.latLng(-85, -180),
+  L.latLng(85, 180)
+);
+
 const map = L.map("map", {
-  worldCopyJump: true,
-  scrollWheelZoom: false
+  scrollWheelZoom: false,
+  maxBounds: worldBounds,
+  maxBoundsViscosity: 1
 }).setView([28, 15], 2);
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  referrerPolicy: "strict-origin-when-cross-origin"
+  referrerPolicy: "strict-origin-when-cross-origin",
+  noWrap: true
 }).addTo(map);
 
 const countryLabelLayer = L.layerGroup().addTo(map);
