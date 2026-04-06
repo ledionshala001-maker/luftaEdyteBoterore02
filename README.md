@@ -78,6 +78,20 @@ Aktualisht projekti përfshin:
 - ngjarje të shumta historike në vende të ndryshme të botës
 - rrjedhë më e pastër e seksionit të hartës me panel udhëzues të ndarë poshtë saj
 - responsive layout për desktop dhe mobile
+- footer me kreditet e nxënësve dhe profesorit
+
+## Kreditet
+
+Ky projekt u realizua nga:
+
+- Ledion Shala
+- Olti Jusufi
+- Vesa Ujkani
+- Ruvejda Hetemi
+
+Me mbështetjen e profesorit:
+
+- Lulzim Hajzeri
 
 ## Mirëmbajtja e README
 
