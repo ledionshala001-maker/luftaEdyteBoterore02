@@ -727,6 +727,18 @@ bindControls();
 state.selectedId = events[0].id;
 updateUI(true);
 
+map.whenReady(() => {
+  window.requestAnimationFrame(() => {
+    map.invalidateSize();
+  });
+});
+
+window.addEventListener("load", () => {
+  window.setTimeout(() => {
+    map.invalidateSize();
+  }, 150);
+});
+
 // Kur layout-i ndryshon, Leaflet ka nevojë të rifreskojë madhësinë e hartës.
 window.addEventListener("resize", () => {
   window.requestAnimationFrame(() => {
