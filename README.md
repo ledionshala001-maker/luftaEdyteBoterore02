@@ -29,7 +29,7 @@ Hartë interaktive front-end për një projekt shkolle rreth Luftës së Dytë B
   Stilet vizuale, layout-i responsive dhe dizajni i hartës.
 
 - `script.js`  
-  Logjika e hartës, filtrat, lista e ngjarjeve, popups, kronologjia dhe etiketat e shteteve.
+  Logjika e hartës, filtrat, lista e ngjarjeve, popups dhe kronologjia.
 
 ## Si ta hapesh lokalisht
 
@@ -76,7 +76,7 @@ Aktualisht projekti përfshin:
 - dizajn më të pastër dhe më të përshtatshëm për prezantim
 - hartë më të qëndrueshme gjatë scroll-it
 - ngjarje të shumta historike në vende të ndryshme të botës
-- panel udhëzues poshtë hartës
+- rrjedhë më e pastër e seksionit të hartës me panel udhëzues të ndarë poshtë saj
 - responsive layout për desktop dhe mobile
 
 ## Mirëmbajtja e README
