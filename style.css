@@ -461,11 +461,12 @@ h2 {
 .map-frame {
   position: relative;
   min-height: 58vh;
-  height: 100%;
+  height: calc(100vh - 210px);
   border-radius: 32px;
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 250, 241, 0.7);
 }
 
 #map {
@@ -577,6 +578,7 @@ h2 {
   .map-frame,
   #map {
     min-height: 68vh;
+    height: 68vh;
   }
 }
 
@@ -617,5 +619,6 @@ h2 {
 
   #map {
     min-height: 62vh;
+    height: 62vh;
   }
 }
